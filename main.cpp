@@ -5,11 +5,13 @@ using namespace std;
 
 void quadratic_function() {
     int a, b, c;
-    cout << "Insira o Primeiro Elemento(ax²): " << " "<< endl;
+    cout << "Bem vindo a Calculadora Quadrática" << endl;
+    cout << "Ela utiliza a 'Fórmula de Bháskara'!" << endl << endl;
+    cout << "Insira o 'a'(ax²): " << " "<< endl;
     cin >> a;
-    cout << "Insira o Segundo Elemento(bx): " << endl;
+    cout << "Insira o 'b'(bx): " << endl;
     cin >> b;
-    cout << "Insira o Terceiro Elemento(c): " << endl;
+    cout << "Insira o 'c'(c): " << endl;
     cin >> c;
     
     int delta = pow(b,2) - 4 * a * c;
