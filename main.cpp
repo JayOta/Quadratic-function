@@ -46,8 +46,6 @@ double quadratic_func_x2(int a, int b, int c){
 }
 
 void show_x1(int a, int b, int c){
-    int y = 1;
-    int parte_int = 2;
     int delta_int = deltaFunc(a, b, c);
     double x1 = quadratic_func_x1(a, b, c);
     vector<string> parte = {"Δ","1.", "2.", "3.", "4.", "5."};
@@ -67,8 +65,6 @@ void show_x1(int a, int b, int c){
 }
 
 void show_x2(int a, int b, int c){
-    int y = 1;
-    int parte_int = 2;
     int delta_int = deltaFunc(a, b, c);
     double x2 = quadratic_func_x2(a, b, c);
     vector<string> parte = {"Δ","1.", "2.", "3.", "4.", "5."};
@@ -116,12 +112,6 @@ void quadratic_function() {
     }
 
 }
-
-
-void show_quadratic_function(){
-
-}
-
 int main()
 {
     quadratic_function();
