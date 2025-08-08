@@ -7,7 +7,7 @@ using namespace std;
 
 int deltaFunc(int a, int b, int c) {
 
-    int delta = pow(b,2) - 4 * a * c;
+    int delta = pow(b,2) - 4 * (a * c);
     return delta;
 }
 
@@ -28,7 +28,7 @@ void show_delta(int a, int b, int c) {
  if(quatro_menos_ac > 0 || quatro_menos_ac == 0){
      cout << "Δ = " << passo4[b] << " + " << quatro_menos_ac << endl;
  } else {
-     cout << "Δ = " << passo4[b] << " " << quatro_menos_ac << endl;
+     cout << "Δ = " << passo4[b] << quatro_menos_ac << endl;
  }
  cout << "Δ = " << delta << endl;
 
@@ -94,8 +94,10 @@ void quadratic_function() {
     cout << "Insira o 'c'(c): " << endl;
     cin >> c;
     cout << endl;
+    cout << "Com isso a fórmula de Bhaskara ficou: " << endl;
+    cout << "(-(b) +/- sqrt(b² - 4ac)) / (2a)  ->  ";
+    cout << "(-(" << b << ") +/- sqrt(" << b << "² - 4 * " << a << " * " << c << ")) / (2 * " << a << ")" << endl << endl;
     
-    int delta = deltaFunc(a, b, c);
 
     cout << "Delta:" << endl << endl; 
     show_delta(a, b, c);
