@@ -51,8 +51,8 @@ void show_x1(int a, int b, int c){
     vector<string> parte = {"Δ","1.", "2.", "3.", "4.", "5."};
     map<int, string> passo1 = {{a, "a"}, {b, "-b"}};
     map<int, int> passo2 = {{a, a}, {b, b}, {delta_int, delta_int}};
-    map<int, int> passo3 = {{a, a}, {b, b}, {delta_int, delta_int}};
-    map<int, int> passo4 = {{a, a}, {b, b}, {delta_int, delta_int}};
+    map<int, int> passo3 = {{a, a}, {b, b}, {delta_int, sqrt(delta_int)}};
+    map<int, int> passo4 = {{a, a}, {b, b}, {delta_int, sqrt(delta_int)}};
     map<int, int> passo5 = {{delta_int, delta_int}};
 
     cout << "x1:" << endl << endl;
@@ -70,8 +70,8 @@ void show_x2(int a, int b, int c){
     vector<string> parte = {"Δ","1.", "2.", "3.", "4.", "5."};
     map<int, string> passo1 = {{a, "a"}, {b, "-b"}};
     map<int, int> passo2 = {{a, a}, {b, b}, {delta_int, delta_int}};
-    map<int, int> passo3 = {{a, a}, {b, b}, {delta_int, delta_int}};
-    map<int, int> passo4 = {{a, a}, {b, b}, {delta_int, delta_int}};
+    map<int, int> passo3 = {{a, a}, {b, b}, {delta_int, sqrt(delta_int)}};
+    map<int, int> passo4 = {{a, a}, {b, b}, {delta_int, sqrt(delta_int)}};
     map<int, int> passo5 = {{delta_int, delta_int}};
 
     cout << "x2:" << endl << endl;
