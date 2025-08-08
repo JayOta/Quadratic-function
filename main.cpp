@@ -7,7 +7,7 @@ using namespace std;
 
 int deltaFunc(int a, int b, int c) {
 
-    int delta = pow(b,2) - 4 * (a * c);
+    int delta = b * b - 4 * a * c;
     return delta;
 }
 
