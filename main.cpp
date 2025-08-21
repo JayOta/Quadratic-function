@@ -8,6 +8,9 @@ using namespace std;
 int deltaFunc(int a, int b, int c) {
 
     int delta = b * b - 4 * a * c;
+    if (delta < 0){
+        delta = 0;
+    }
     return delta;
 }
 
@@ -47,6 +50,9 @@ double quadratic_func_x2(int a, int b, int c){
 
 void show_x1(int a, int b, int c){
     int delta_int = deltaFunc(a, b, c);
+    if(sqrt(delta_int) < 0) {
+        delta_int = 0;
+    }
     double x1 = quadratic_func_x1(a, b, c);
     vector<string> parte = {"Δ","1.", "2.", "3.", "4.", "5."};
     map<int, string> passo1 = {{a, "a"}, {b, "-b"}};
